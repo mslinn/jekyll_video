@@ -1,17 +1,16 @@
 source 'https://rubygems.org'
 
-# gem 'ffi'
+gemspec
+
 gem 'jekyll', '>= 4.3.2'
-# gem 'nokogumbo', '=2.0.3'
-# gem 'ptools'
 
 group :jekyll_plugins do
   gem 'classifier-reborn'
-  gem 'jekyll_video', path: '../'  # use unreleased gem dependencies defined in the parent project
   gem 'html-proofer'
   gem 'jekyll-assets', git: 'https://github.com/envygeeks/jekyll-assets'
   gem 'jekyll-environment-variables'
   gem 'jekyll-tagging'
+  gem 'jekyll_video', path: '../'  # use unreleased gem dependencies defined in the parent project
 end
 
 group :test, :development do

@@ -35,7 +35,7 @@ Add the following CSS:
 
 ## Usage
 
-See the `demo/` directory for an example.
+See the [`demo/`](demo/index.html) directory for usage examples.
 
 
 ## Development
@@ -46,7 +46,7 @@ After checking out this git repository, install dependencies by typing:
 $ bin/setup
 ```
 
-You should do the above before running Visual Studio Code.
+You should do the above before opening the project with Visual Studio Code.
 
 
 ### Run the Tests
