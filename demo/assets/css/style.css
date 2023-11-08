@@ -153,6 +153,16 @@ pre {
   color: #5fb25f;
 }
 
+.rounded {
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+.shadow {
+  border: thin gray solid;
+  box-shadow: 5px 5px 6px #999;
+}
+
 .unselectable {
   color: #7922f9;
   -moz-user-select: none;

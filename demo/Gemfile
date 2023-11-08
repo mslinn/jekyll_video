@@ -6,8 +6,8 @@ gem 'jekyll', '>= 4.3.2'
 # gem 'ptools'
 
 group :jekyll_plugins do
-  gem 'jekyll_video', path: '../'  # use unreleased gem dependencies defined in the parent project
   gem 'classifier-reborn'
+  gem 'jekyll_video', path: '../'  # use unreleased gem dependencies defined in the parent project
   gem 'html-proofer'
   gem 'jekyll-assets', git: 'https://github.com/envygeeks/jekyll-assets'
   gem 'jekyll-environment-variables'

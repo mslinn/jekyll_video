@@ -1,6 +1,6 @@
 # `Jekyll_video` [![Gem Version](https://badge.fury.io/rb/jekyll_video.svg)](https://badge.fury.io/rb/jekyll_video)
 
-Description of JekyllVideo
+Embeds a video HTML tag into a Jekyll web page.
 
 
 ## Installation
@@ -19,10 +19,23 @@ And then execute:
 $ bundle
 ```
 
+Add the following CSS:
+
+```css
+.rounded {
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+.shadow {
+  border: thin gray solid;
+  box-shadow: 5px 5px 6px #999;
+}
+```
 
 ## Usage
 
-Describe how to use this gem
+See the `demo/` directory for an example.
 
 
 ## Development

@@ -6,5 +6,32 @@ title: Exercising Parameter Combinations
 <h2 id="tag_video" class='code'>video</h2>
 <!-- #region video  (invoked without parameters) -->
 <h3 id="video" class="code">video  (invoked without parameters)</h3>
-{% video  %}
+{% video src="https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/04/file_example_MP4_480_1_5MG.mp4" %}
+<!-- endregion -->
+
+
+<!-- #region video (width 50%) -->
+<h3 id="video" class="code">video (width 50%)</h3>
+{% video
+  src="https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/04/file_example_MP4_480_1_5MG.mp4"
+  width="50%"
+%}
+<!-- endregion -->
+
+
+<!-- #region video (classes='') -->
+<h3 id="video" class="code">video (classes='')</h3>
+{% video
+  classes=""
+  src="https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/04/file_example_MP4_480_1_5MG.mp4"
+%}
+<!-- endregion -->
+
+
+<!-- #region video (style='') -->
+<h3 id="video" class="code">video (style='border: thick red dotted')</h3>
+{% video
+  src="https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/04/file_example_MP4_480_1_5MG.mp4"
+  style="border: thick red dotted"
+%}
 <!-- endregion -->

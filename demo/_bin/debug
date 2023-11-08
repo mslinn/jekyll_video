@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# shellcheck disable=SC2086,SC2155,SC2059
-
 function help {
   echo "
 $(basename $0) - Run the demo Jekyll website.
-By default the demo Jekyll website runs without restriction under `debug`,
+By default the demo Jekyll website runs without restriction under debug,
 and listens on 0.0.0.0:1234.
 Options:
   -h  Show this error message
@@ -38,7 +36,7 @@ while [ -L "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
   [[ $SOURCE != /* ]] && SOURCE=$DIR/$SOURCE # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
 done
 DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
-cd "$DIR/.."
+cd "$DIR/.." || exit
 
 # dispatcher-port and dispatcher-port are arbitrarily chosen to prevent conflicts with other instances.
 
@@ -62,10 +60,7 @@ bundle exec ../binstub/jekyll clean # Ensure all hooks get called
 if [ "$RUN_FREE" ]; then
   bundle exec ../binstub/jekyll $run
 else
-  bundle exec ../binstub/rdebug-ide \
-    --host 0.0.0.0 \
-    --port 1234 \
-    --dispatcher-port 26162 \
-    -- \
+  bundle exec ../binstub/rdgb \
+    --debugPort 0 \
     ../binstub/jekyll $run
 fi
