@@ -19,6 +19,9 @@ Gemspec/DeprecatedAttributeAssignment:
 Gemspec/RequireMFA:
   Enabled: false
 
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+  
 Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
