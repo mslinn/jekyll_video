@@ -3,35 +3,51 @@ description: jekyll_video demonstration.
 layout: default
 title: Exercising Parameter Combinations
 ---
-<h2 id="tag_video" class='code'>video</h2>
+<h2 id="missing_video" class='code'>Video missing</h2>
+<!-- #region Local Video Missing -->
+<h3 id="missing_video" class='code'>Local Video missing</h3>
+{% video src="/no_such_video.mp4" %}
+<!-- endregion -->
+
+<!-- #region Local Video Missing -->
+<h3 id="missing_video" class='code'>Remote Video missing</h3>
+<p>
+  There should be no error, and no video should be shown:
+</p>
+{% video src="https://google.com/no_such_video.mp4" %}
+<!-- endregion -->
+<!-- endregion -->
+
+
+<h2 id="tag_video" class='code'>Working Video</h2>
 <!-- #region video  (invoked without parameters) -->
-<h3 id="video" class="code">video  (invoked without parameters)</h3>
-{% video src="https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/04/file_example_MP4_480_1_5MG.mp4" %}
+<h3 id="video" class="code">Video  (invoked without parameters)</h3>
+{% video src="https://www3.cde.ca.gov/download/rod/big_buck_bunny.mp4" %}
 <!-- endregion -->
 
 
 <!-- #region video (width 50%) -->
-<h3 id="video" class="code">video (width 50%)</h3>
+<h3 id="video" class="code">Video (width 50%)</h3>
 {% video
-  src="https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/04/file_example_MP4_480_1_5MG.mp4"
+  src="https://www3.cde.ca.gov/download/rod/big_buck_bunny.mp4"
   width="50%"
 %}
 <!-- endregion -->
 
 
 <!-- #region video (classes='') -->
-<h3 id="video" class="code">video (classes='')</h3>
+<h3 id="video" class="code">Video (classes='')</h3>
 {% video
   classes=""
-  src="https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/04/file_example_MP4_480_1_5MG.mp4"
+  src="https://www3.cde.ca.gov/download/rod/big_buck_bunny.mp4"
 %}
 <!-- endregion -->
 
 
 <!-- #region video (style='') -->
-<h3 id="video" class="code">video (style='border: thick red dotted')</h3>
+<h3 id="video" class="code">Video (style='border: thick red dotted')</h3>
 {% video
-  src="https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/04/file_example_MP4_480_1_5MG.mp4"
+  src="https://www3.cde.ca.gov/download/rod/big_buck_bunny.mp4"
   style="border: thick red dotted"
 %}
 <!-- endregion -->

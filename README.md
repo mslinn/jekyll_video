@@ -22,14 +22,16 @@ $ bundle
 Add the following CSS:
 
 ```css
-.rounded {
-  border: 1px solid;
-  border-radius: 7px;
-}
-
-.shadow {
-  border: thin gray solid;
-  box-shadow: 5px 5px 6px #999;
+.jekyll_plugin_support_error, .jekyll_video_error {
+  background-color: rgb(248, 149, 149);
+  border-radius: 4pt;
+  border: rgb(155, 141, 141) 2px solid;
+  color: black;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-stretch: semi-condensed;
+  font-size: 9pt;
+  line-height: 150%;
+  padding: 2pt 4pt 2pt 4pt;
 }
 ```
 
