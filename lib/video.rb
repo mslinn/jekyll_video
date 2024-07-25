@@ -53,6 +53,6 @@ module JekyllVideo
       "<div class='jekyll_video_error'>#{e.class} raised in #{@tag_name} tag\n#{msg}</div>"
     end
 
-    JekyllPluginHelper.register(self, PLUGIN_NAME)
+    JekyllSupport::JekyllPluginHelper.register(self, PLUGIN_NAME)
   end
 end
