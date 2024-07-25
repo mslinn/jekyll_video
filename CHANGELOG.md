@@ -2,7 +2,7 @@
 
 ## 0.1.2
 
-* Compatible with `jekyll_plugin_support` v0.8.7
+* Compatible with `jekyll_plugin_support` v1.0.0
 
 
 ## 0.1.1
