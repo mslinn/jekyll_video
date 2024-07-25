@@ -21,7 +21,7 @@ Gemspec/RequireMFA:
 
 Gemspec/RequiredRubyVersion:
   Enabled: false
-  
+
 Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
@@ -52,6 +52,7 @@ Metrics/PerceivedComplexity:
 Naming/FileName:
   Exclude:
     - Rakefile
+    - "*.md"
 
 Style/Documentation:
   Enabled: false
@@ -62,12 +63,15 @@ Style/FrozenStringLiteralComment:
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
-RSpec/FilePath:
-  IgnoreMethods: true
-  SpecSuffixOnly: true
-
 RSpec/ExampleLength:
   Max: 30
+
+RSpec/SpecFilePathFormat:
+  Enabled: false
+  IgnoreMethods: true
+
+RSpec/SpecFilePathSuffix:
+  Enabled: false
 
 RSpec/MultipleExpectations:
   Max: 15
