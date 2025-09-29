@@ -1,4 +1,4 @@
-require:
+plugins:
   # - rubocop-jekyll
   - rubocop-md
   - rubocop-performance
@@ -7,7 +7,6 @@ require:
 
 AllCops:
   Exclude:
-    - binstub/**/*
     - binstub/**/*
     - vendor/**/*
     - Gemfile*
